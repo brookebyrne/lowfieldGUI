@@ -1,8 +1,8 @@
 import os
 import numpy as np
-from ReadData.read_raw_field import read_raw_field
-from ReadData.read_tecmag_header import read_tecmag_header
-from ReadData.read_tecmag_hdr import read_tecmag_hdr
+from ReadData import read_raw_field
+from ReadData import read_tecmag_header
+from ReadData import read_tecmag_hdr
 
 def read_tecmag(filename, dsize):
     ms = []
