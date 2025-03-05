@@ -1,8 +1,9 @@
 import os
 import numpy as np
-from ReadData import read_raw_field
-from ReadData import read_tecmag_header
-from ReadData import read_tecmag_hdr
+from . import read_raw_field
+from . import read_tecmag_header
+from . import read_tecmag_hdr
+import sys
 
 def read_tecmag(filename, dsize):
     ms = []
@@ -46,3 +47,15 @@ def read_tecmag(filename, dsize):
     ms = np.squeeze(ms)
 
     return ms, header, var_data
+
+def main():
+    if len(sys.argv) != 2:
+        print("Usage: python read_tecmag.py <filename>")
+        sys.exit(1)
+
+    filename = sys.argv[1]
+    # Add your code to read the file here
+    print(f"Reading file: {filename}")
+
+if __name__ == "__main__":
+    main()
