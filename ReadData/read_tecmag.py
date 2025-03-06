@@ -54,8 +54,15 @@ def main():
         sys.exit(1)
 
     filename = sys.argv[1]
-    # Add your code to read the file here
     print(f"Reading file: {filename}")
+
+    # Call the read_tecmag function and capture the output
+    dsize = []  # Define dsize as needed
+    ms, header, var_data = read_tecmag(filename, dsize)
+
+    # Print or process the output as needed
+    print("Output Data:")
+    print(ms)  # or any other relevant output
 
 if __name__ == "__main__":
     main()
