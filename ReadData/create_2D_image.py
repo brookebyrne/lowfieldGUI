@@ -79,11 +79,11 @@ def read_tecmag_header(filename=None):
     if os.path.exists(filename) and os.path.getsize(filename) > 1056:
         with open(filename, 'rb') as file_pt:
             Hdr_var = read_tecmag_hdr(file_pt)
-            Hdr_name = Hdr_var[:, 0:28].tolist()
-            Hdr_offset = [eval(x) for x in Hdr_var[:, 28:34].tolist()]
-            Hdr_type = [x.strip() for x in Hdr_var[:, 35:43].tolist()]
-            Hdr_size = [eval(x) for x in Hdr_var[:, 44:47].tolist()]
-            Hdr_desc = Hdr_var[:, 47:85].tolist()
+            Hdr_name = Hdr_var[:, 0:27].tolist()
+            Hdr_offset = [eval(x) for x in Hdr_var[:, 27:33].tolist()]
+            Hdr_type = [x.strip() for x in Hdr_var[:, 34:42].tolist()]
+            Hdr_size = [eval(x) for x in Hdr_var[:, 43:46].tolist()]
+            Hdr_desc = Hdr_var[:, 46:84].tolist()
 
             for i, (Var_name, Var_offset, Var_type, Var_size, Var_desc) in enumerate(zip(Hdr_name, Hdr_offset, Hdr_type, Hdr_size, Hdr_desc)):
                 file_pt.seek(Var_offset)
