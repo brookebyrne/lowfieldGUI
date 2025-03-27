@@ -1,0 +1,3 @@
+[submodule "pytnt"]
+	path = pytnt
+	url = https://github.com/chatcannon/pytnt
