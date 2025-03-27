@@ -1,4 +1,4 @@
-from pytnt import TNTfile
+from pytnt_2025 import TNTfile
 
 tnt = TNTfile('GrapefruitTNT/SE_grapefruit_500avgs_2.tnt')
 ## can change the file name to any other TNT file in the folder! yay

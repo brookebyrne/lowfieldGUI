@@ -1,0 +1,3 @@
+[submodule "pytnt_2025"]
+	path = pytnt_2025
+	url = https://github.com/brookebyrne/pytnt
