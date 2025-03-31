@@ -1,4 +1,7 @@
-from pytnt_2025.pytnt.processTNT import TNTfile
+## cd to lowfieldGUI directory: cd exsiting\path\lowfieldGUI
+## RUN COMMAND IN TERMINAL: python ReadData\ThisWorksYay.py
+
+from lowfieldGUI.pytnt_2025.pytnt.processTNT import TNTfile
 
 tnt = TNTfile('GrapefruitTNT/SE_grapefruit_500avgs_2.tnt')
 ## can change the file name to any other TNT file in the folder! yay
