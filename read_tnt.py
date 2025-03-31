@@ -1,9 +1,14 @@
 ## cd to lowfieldGUI directory: cd exsiting\path\lowfieldGUI
 ## RUN COMMAND IN TERMINAL: python ReadData\ThisWorksYay.py
-
+import sys
 from lowfieldGUI.pytnt_2025.pytnt.processTNT import TNTfile
 
-tnt = TNTfile('GrapefruitTNT/SE_grapefruit_500avgs_2.tnt')
+if len(sys.argv) < 2:
+    print("Usage: python read_tnt.py <tnt_file_name>")
+    sys.exit(1)
+
+tnt_file_name = sys.argv[1]
+tnt = TNTfile(tnt_file_name)
 ## can change the file name to any other TNT file in the folder! yay
 
 ## The raw NMR FID data
