@@ -1,6 +1,6 @@
 # This script calculates the flip angle of a shaped pulse.
 # Uses adapted code from https://www.mathworks.com/matlabcentral/fileexchange/37122-tnmr-gui 
-# Code is adapted from MATLAB code into python code
+# Code is adapted from MATLAB code into python code and edited to correct for the off-resonance frequency in the lab's magnet
 
 import sys
 import os
