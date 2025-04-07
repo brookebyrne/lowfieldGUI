@@ -1,7 +1,7 @@
-## cd to lowfieldGUI directory: cd exsiting\path\lowfieldGUI
-## RUN COMMAND IN TERMINAL: python ReadData\ThisWorksYay.py
+
 import sys
 from lowfieldGUI.pytnt_2025.pytnt.processTNT import TNTfile
+import matplotlib.pyplot as m 
 
 if len(sys.argv) < 2:
     print("Usage: python read_tnt.py <tnt_file_name>")
@@ -28,4 +28,6 @@ spec_data.shape
 (16384,)
 
 print(spec_data)
+amp = fid_data[:,0,0,0]
+m.plot(amp)
 
