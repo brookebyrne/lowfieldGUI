@@ -52,12 +52,8 @@ Calibrate the attenuation of the scanner by running the following code in your t
 
 To test on exsiting files/data, run the following code:
 
-`python calAmp.py rf1 C:\Users\bbyrn\lowfieldGUI\testFiles\FID_FA_cal.tnt`
+`python calAmp.py rf0 C:\Users\bbyrn\lowfieldGUI\testFiles\FID_FA_cal.tnt`
 
 `python calAtten.py rf1 C:\Users\bbyrn\lowfieldGUI\testFiles\FAcal18atten.tnt C:\Users\bbyrn\lowfieldGUI\testFiles\FAcal21atten.tnt C:\Users\bbyrn\lowfieldGUI\testFiles\FAcal24atten.tnt C:\Users\bbyrn\lowfieldGUI\testFiles\FAcal30atten.tnt C:\Users\bbyrn\lowfieldGUI\testFiles\FAcal33atten.tnt C:\Users\bbyrn\lowfieldGUI\testFiles\FAcal39atten.tnt C:\Users\bbyrn\lowfieldGUI\testFiles\FAcal42atten.tnt C:\Users\bbyrn\lowfieldGUI\testFiles\FAcal45atten.tnt C:\Users\bbyrn\lowfieldGUI\testFiles\FAcal48atten.tnt`
 
-
-
-#outputs: attenuation, ampltiude, report how much power you are using 
-#take the 250w power and apply the attenuation you want, (apply 3db then you get 125w) and then you can plot x axis to be 0-125w and y axis to be ? idk have to as charlotte on this oe
 
