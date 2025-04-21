@@ -1,4 +1,0 @@
-{
-    "python.analysis.extraPaths": ["./pytnt_2025"],
-    "python.defaultInterpreterPath": "/path/to/your/python"
-} 
