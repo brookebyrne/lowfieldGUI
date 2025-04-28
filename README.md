@@ -1,5 +1,7 @@
 ## Set up instructions 
 
+Running with Python 3.13 and NumPy 2.2.5.
+
 Install pytnt by running the following command in your terminal:\
 `gh repo clone brookebyrne/pytnt`
 
@@ -49,11 +51,5 @@ Calibrate the attenuation of the scanner by running the following code in your t
 
     where table_name is the name of the table that contains the scanner amplitudes when you first ran the scan in Tecmag
     and file_path1, file_path2, etc. are the paths to the tnt files at different attenuation values. You can include as many tnt files as you want
-
-To test on exsiting files/data, run the following code:
-
-`python calAmp.py rf0 C:\Users\bbyrn\lowfieldGUI\testFiles\FID_FA_cal.tnt`
-
-`python calAtten.py rf1 C:\Users\bbyrn\lowfieldGUI\testFiles\FAcal18atten.tnt C:\Users\bbyrn\lowfieldGUI\testFiles\FAcal21atten.tnt C:\Users\bbyrn\lowfieldGUI\testFiles\FAcal24atten.tnt C:\Users\bbyrn\lowfieldGUI\testFiles\FAcal30atten.tnt C:\Users\bbyrn\lowfieldGUI\testFiles\FAcal33atten.tnt C:\Users\bbyrn\lowfieldGUI\testFiles\FAcal39atten.tnt C:\Users\bbyrn\lowfieldGUI\testFiles\FAcal42atten.tnt C:\Users\bbyrn\lowfieldGUI\testFiles\FAcal45atten.tnt C:\Users\bbyrn\lowfieldGUI\testFiles\FAcal48atten.tnt`
 
 
